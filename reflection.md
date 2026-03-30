@@ -7,7 +7,6 @@
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
-**
 - Owner
   - Attributes: name, pets
   - Actions: see user info, edit user info, see pet(s), add/remove/edit pet(s), view daily schedule, generate daily schedule
@@ -20,7 +19,6 @@
 - Schedule (maybe optional, unsure if we can just use a list of tasks)
   - Attributes: tasks, explanation/description
   - Actions: view all tasks, edit tasks, edit order
-**
 
 This is a very rough draft.
 
@@ -294,6 +292,8 @@ The conflict detection implementation is currently a quadratic algorithm rather 
 
 - What behaviors did you test?
 - Why were these tests important?
+
+
 
 **b. Confidence**
 

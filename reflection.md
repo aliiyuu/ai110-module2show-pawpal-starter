@@ -263,12 +263,16 @@ classDiagram
 - What constraints does your scheduler consider (for example: time, priority, preferences)?
 - How did you decide which constraints mattered most?
 
+Time, priority, and preferences are all considered in the scheduling the algorithm. The user can specify whether to sort by start time or priority within the UI, and the scheduler will follow the user's preferences.
+
 **b. Tradeoffs**
 
 - Describe one tradeoff your scheduler makes.
 - Why is that tradeoff reasonable for this scenario?
 
 ---
+
+The conflict detection implementation is currently a quadratic algorithm rather than logarithmic, but this is necessary in order to capture non-adjacent overlaps (e.g. if task A spans tasks B and C). Libraries like `intervaltree` may also be considered if a logarithmic time complexity is needed.
 
 ## 3. AI Collaboration
 
